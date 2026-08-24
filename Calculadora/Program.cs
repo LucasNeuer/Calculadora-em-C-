@@ -28,7 +28,7 @@ public static class Program
                     Console.Clear();
                     Titulo();
                     LinhaDivisoria();
-                    Console.WriteLine($"Primeiro número: {primeiroNumero}");
+                    Console.WriteLine($"Primeiro número: {primeiroNumero:0.##}");
                 }
                 else
                 {
@@ -183,16 +183,16 @@ public static class Program
         switch (operacao)
         {
             case 1:
-                Console.WriteLine($"[RESULTADO] {primeiroNumero} + {segundoNumero} = {resultado:0.##}");
+                Console.WriteLine($"[RESULTADO] {primeiroNumero:0.##} + {segundoNumero:0.##} = {resultado:0.##}");
                 break;
             case 2:
-                Console.WriteLine($"[RESULTADO] {primeiroNumero} - {segundoNumero} = {resultado:0.##}");
+                Console.WriteLine($"[RESULTADO] {primeiroNumero:0.##} - {segundoNumero:0.##} = {resultado:0.##}");
                 break;
             case 3:
-                Console.WriteLine($"[RESULTADO] {primeiroNumero} * {segundoNumero} = {resultado:0.##}");
+                Console.WriteLine($"[RESULTADO] {primeiroNumero:0.##} * {segundoNumero:0.##} = {resultado:0.##}");
                 break;
             case 4:
-                Console.WriteLine($"[RESULTADO] {primeiroNumero} / {segundoNumero} = {resultado:0.##}");
+                Console.WriteLine($"[RESULTADO] {primeiroNumero:0.##} / {segundoNumero:0.##} = {resultado:0.##}");
                 break;
         }
         Console.ResetColor();
